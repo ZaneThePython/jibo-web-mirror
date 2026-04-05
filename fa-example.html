@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
@@ -103,7 +106,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 5rem;
   }
   .hero p {
     font-size: 1.05rem;
@@ -330,3 +332,112 @@
     opacity: 0.7;
   }
 </style>
+</head>
+<body>
+
+<!-- Floating ambient orbs -->
+<div class="orbs">
+  <div class="orb" style="width:280px;height:280px;top:5%;left:60%;background:radial-gradient(circle,#a0e8f0,transparent);animation-duration:11s;"></div>
+  <div class="orb" style="width:200px;height:200px;top:45%;left:5%;background:radial-gradient(circle,#90e8d0,transparent);animation-duration:14s;"></div>
+  <div class="orb" style="width:160px;height:160px;top:70%;left:75%;background:radial-gradient(circle,#c0d8f8,transparent);animation-duration:9s;"></div>
+  <div class="orb" style="width:120px;height:120px;top:25%;left:30%;background:radial-gradient(circle,#b0f0e0,transparent);animation-duration:16s;"></div>
+</div>
+
+<div class="page">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <div class="logo-orb"></div>
+      AeroOS
+    </div>
+    <div class="nav-links">
+      <div class="nav-link">Home</div>
+      <div class="nav-link">Gallery</div>
+      <div class="nav-link">About</div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Welcome to<br><span>Frutiger Aero</span></h1>
+    <p>Clean interfaces, glossy surfaces, and the feeling of a better internet. Nature-inspired. Hopeful. Alive.</p>
+    <div class="btn-group">
+      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-glass">Learn More</button>
+    </div>
+  </div>
+
+  <!-- FEATURE CARDS -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon icon-blue">🫧</div>
+      <h3>Glass surfaces</h3>
+      <p>Translucent layers, soft blur, and light refracting through everything.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon icon-green">🌿</div>
+      <h3>Nature-inspired</h3>
+      <p>Aqua, teal, and lush greens borrowed from the world outside your screen.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon icon-purple">✨</div>
+      <h3>Glossy shine</h3>
+      <p>Every surface catches the light. Buttons glow. Progress bars gleam.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon icon-orange">☀️</div>
+      <h3>Optimistic Y2K</h3>
+      <p>The aesthetic of a future that felt bright, connected, and full of wonder.</p>
+    </div>
+  </div>
+
+  <!-- GLASS PANEL with progress bars -->
+  <div class="panel">
+    <div class="panel-title">System Vitals</div>
+    <div class="progress-rows">
+      <div class="progress-item">
+        <div class="progress-label">Serenity</div>
+        <div class="progress-bar-bg"><div class="progress-bar bar-teal" style="width:88%"></div></div>
+        <div class="progress-val">88%</div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-label">Glossiness</div>
+        <div class="progress-bar-bg"><div class="progress-bar bar-blue" style="width:97%"></div></div>
+        <div class="progress-val">97%</div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-label">Vibes</div>
+        <div class="progress-bar-bg"><div class="progress-bar bar-purple" style="width:74%"></div></div>
+        <div class="progress-val">74%</div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-label">Nature</div>
+        <div class="progress-bar-bg"><div class="progress-bar bar-green" style="width:91%"></div></div>
+        <div class="progress-val">91%</div>
+      </div>
+    </div>
+
+    <!-- Tag bubbles -->
+    <div class="bubbles" id="bubbles">
+      <div class="bubble active" onclick="toggleBubble(this)">Aero</div>
+      <div class="bubble" onclick="toggleBubble(this)">Y2K</div>
+      <div class="bubble" onclick="toggleBubble(this)">Glassmorphism</div>
+      <div class="bubble" onclick="toggleBubble(this)">Aqua</div>
+      <div class="bubble" onclick="toggleBubble(this)">Vista</div>
+      <div class="bubble" onclick="toggleBubble(this)">Web 2.0</div>
+      <div class="bubble" onclick="toggleBubble(this)">Skeuomorphic</div>
+    </div>
+  </div>
+
+  <div class="footer-note">Made with glass, gradients, and good vibes ✦</div>
+</div>
+
+<script>
+  function toggleBubble(el) {
+    el.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
